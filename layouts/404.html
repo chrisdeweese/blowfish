@@ -6,4 +6,5 @@
   <div class="prose dark:prose-invert">
     <p>{{ i18n "error.404_description" | emojify }}</p>
   </div>
+  <script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>
 {{ end }}
